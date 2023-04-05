@@ -1,0 +1,338 @@
+<div style="background-color:#1d1d1b;">
+    {{block class="Mageplaza\BannerSlider\Block\Widget" slider_id="8"}}
+</div>
+    
+    {{block class="Magento\Cms\Block\Block" block_id="homepage_bloque_1"}}
+    {{block class="Magento\Cms\Block\Block" block_id="homepage_bloque_2"}}
+    {{block class="Magento\Cms\Block\Block" block_id="homepage_bloque_3"}}
+    
+    
+    <div class="video" style="margin-top: 3em;">
+    {{block class="Mageplaza\BannerSlider\Block\Widget" slider_id="9"}}
+    </div>
+    {{block class="Magento\Cms\Block\Block" block_id="homepage_bloque_4"}}
+    
+    
+    <!-- 
+    <div style="background-color: #aaa; color: white; text-transform:uppercase; width: 100%; text-align:center; padding-top:5px; padding-bottom: 5px;">
+    <b></b>12 cuotas sin interés. | Despacho gratis por compras superiores a $50.000 en Regiones I, III, IV, V, IX, XV Y RM</div> 
+    -->
+    
+    <div data-retailrocket-markup-block="6092b62d97a5282a38564a84" ></div>
+    
+    <div style="text-align:left; padding:15px 15px;background-color: #1d1d1b;">
+      <h3  class="carruselTitulo" style="text-align:center;margin-bottom:4px;color:white;"><b>SPRING SUMMER '23. LINOS</b></h3>
+      <div id="fashion_product" class="product-padding no-border" style="margin-top: 25px;">
+        {{block class="Smartwave\Filterproducts\Block\Home\FeaturedList" name="latest_product" product_count="8" aspect_ratio="1" image_width="400" template="owl_list.phtml"}}
+      </div>
+      <script type="text/javascript">
+        require([
+          'jquery',
+          'owl.carousel/owl.carousel.min'
+        ], function ($) {
+          $("#fashion_product .owl-carousel").owlCarousel({
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            navRewind: true,
+            nav: false,
+            dots: true,
+            responsive: {
+              0: {
+                items:2
+              },
+              768: {
+                items:3
+              },
+              992: {
+                items:4
+              },
+              1200: {
+                items:5
+              }
+            }
+          });
+        });
+      </script>
+    </div>
+    <script type="text/javascript">
+      require([
+        'jquery'
+      ], function ($) {
+        $("#half-image-1").css("min-height",$("#half-content-1").outerHeight()+"px");
+        $("#half-image-2").css("min-height",$("#half-content-2").outerHeight()+"px");
+        setTimeout(function(){
+          $("#half-image-1").css("min-height",$("#half-content-1").outerHeight()+"px");
+          $("#half-image-2").css("min-height",$("#half-content-2").outerHeight()+"px");
+        }, 5000);
+        $(window).resize(function(){
+          setTimeout(function(){
+            $("#half-image-1").css("min-height",$("#half-content-1").outerHeight()+"px");
+            $("#half-image-2").css("min-height",$("#half-content-2").outerHeight()+"px");
+          }, 500);
+        });
+      });
+    </script>
+      </div>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+    .carruselTitulo{
+        font-family: 'Inter', sans-serif;
+    }
+    
+    @media (min-width: 768px){
+    .page-header.type19 .nav-sections {
+        background-color: #1d1d1b !important;
+        color: White;
+        box-shadow: rgb(0 0 0 / 10%) 0px 1px 5px 0px;
+    }
+    .page-header.type19 .navigation .level0 > .level-top {
+        font-family: 'Inter', sans-serif !important;
+        color: white;
+    }
+    .products-grid .product-item .product-item-details {
+      padding: 18px 10px 30px;
+      background-color: #1d1d1b;
+  }
+  .products-grid:not(.side-list) .product-item .product-item-info .product.name a {
+    font-size: 15px;
+    color: white !important;
+    font-family: 'inter';
+  }
+  .price-box .price {
+    font-family: inter;
+    font-size: 18px;
+    letter-spacing: 0.005em;
+    color: white;
+    font-weight: 700;
+}
+    }
+    .page-main {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+    .insta-follow {
+        position: absolute;
+        top: calc(50% - 123px);
+        left: calc(50% - 140px);
+        background-color:#0e0e0e;
+        padding: 30px 40px;
+        text-align:center;
+        color:#fff;
+      }
+      .insta-follow i {
+          font-size: 24px;
+      }
+      .insta-follow h3 {
+        font-size:48px;
+        font-weight:300;
+        text-transform: uppercase;
+        font-family: 'Oswald';
+        color:#fff;
+        line-height: 1;
+        padding-top:15px;
+      }
+      .insta-follow span {
+          font-size: 15px;
+        letter-spacing: 0.05em;
+        display: block;
+        margin-bottom: 28px;
+      }
+      .insta-follow .btn-default {
+        font-family: 'Oswald';
+        border: solid 2px #2c2c2c;
+        background-color:#0e0e0e;
+        padding: 9px 28px;
+        font-size: 14px;
+        text-transform:uppercase;
+        letter-spacing:0.05em;
+        border-radius:2px;
+        box-shadow: none;
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: #fff;
+      }
+      .product-item-photo {
+        border-radius: 0;
+        border: 0;
+      }
+      #banner-slider-demo-4 .slide1-content .content-area .text1 {
+          position: relative;
+        font-family:'Oswald';
+        font-size:18px;
+        letter-spacing:-0.01em;
+        text-transform:uppercase;
+        color:#fff;
+        line-height:1;
+        font-weight:400;
+      }
+      #banner-slider-demo-4 .slide1-content .content-area .text1 .inner1{
+          font-size:64px;color:#fff;letter-spacing:-0.01em;display:inline-block;display:inline-block;text-shadow: 5px 3px #92a9b3;font-weight:600;margin-top:5px;font-family:'Poppins';margin-left:-4px;margin-right: 5px;
+      }
+      #banner-slider-demo-4 .slide1-content .content-area .text1 .inner2{
+        position:absolute;top:23px;font-size:33px;font-weight: 400;font-family: 'Open Sans';
+      }
+      #banner-slider-demo-4 .slide1-content .content-area .text1 .inner3{
+          font-family:'Oswald';font-size:18px;letter-spacing:0.075em;color:#fff;font-weight:400;display:block;
+      }
+      #banner-slider-demo-4 .slide1-content .content-area .text2 {
+        font-family:'Oswald';font-size:80px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1;margin-top:30px;
+      }
+      #banner-slider-demo-4 .slide1-content .content-area .text3 {
+        font-weight:400;color:#fff;line-height:1;text-transform: uppercase;font-size: 20px;letter-spacing: 0.075em;margin-bottom:35px;
+      }
+      #banner-slider-demo-4 .slide1-content .content-area .btn-default {
+        text-transform:uppercase;padding:14px 20px;border-radius:2px;font-family:'Oswald';letter-spacing:0.05em;font-size:14px;line-height:1;color:#fff;
+      }
+      #banner-slider-demo-4 .slide2-content .content-area .text1 {
+          font-family:'Oswald';font-size:80px;font-weight:700;text-transform:uppercase;color:#fff;line-height:1;margin-bottom:25px;
+      }
+      #banner-slider-demo-4 .slide2-content .content-area .text2 {
+        font-family:'Poppins';font-weight:600;color:#fff;line-height:1;text-transform: uppercase;font-size: 64px;letter-spacing: -0.01em;text-shadow: 5px 3px #92a9b3;margin: 0 0 25px;
+      }
+      #banner-slider-demo-4 .slide2-content .content-area .text3 {
+        font-family:'Oswald';font-size:18px;font-weight:400;letter-spacing:-0.01em;color:#fff;margin:0;text-transform:uppercase;margin: 0 0 35px;
+      }
+      #banner-slider-demo-4 .slide2-content .content-area .btn-default {
+        text-transform:uppercase;padding:14px 20px;border-radius:2px;font-family:'Oswald';letter-spacing:0.05em;font-size:14px;width:auto;height:auto;line-height:1;color:#fff;
+      }
+      @media(max-width:767px){
+        #banner-slider-demo-4 .slide1-content .content-area .text1 {
+          font-size:10px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .text1 .inner1 {
+          font-size: 35px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .text1 .inner2 {
+          top: 18px;
+          font-size: 13px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .text1 .inner3 {
+          font-size: 10px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .text2 {
+          font-size: 40px;
+          margin-top: 10px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .text3 {
+          font-size: 10px;
+          margin-bottom: 15px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .btn-default {
+          padding: 8px 10px;
+          font-size: 12px;
+        }
+        #banner-slider-demo-4 .slide2-content .content-area .text1 {
+          font-size: 40px;
+          margin-bottom: 10px;
+        }
+        #banner-slider-demo-4 .slide2-content .content-area .text2 {
+          font-size: 33px;
+          margin: 0 0 7px;
+        }
+        #banner-slider-demo-4 .slide2-content .content-area .text3 {
+          font-size: 10px;
+          margin: 0 0 13px;
+        }
+        #banner-slider-demo-4 .slide2-content .content-area .btn-default {
+          padding: 8px 10px;
+          font-size: 11px;
+        }
+        #banner-slider-demo-4 .owl-controls {
+          display:none!important;
+        }
+      }
+      @media(max-width:320px){
+        #banner-slider-demo-4 .slide1-content .content-area .text1 .inner1 {
+          font-size: 33px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .text2 {
+          font-size: 34px;
+          margin-top: 7px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .text3 {
+          font-size: 9px;
+          margin-bottom: 12px;
+        }
+        #banner-slider-demo-4 .slide1-content .content-area .btn-default {
+          padding: 7px 9px;
+          font-size: 10px;
+        }
+        #banner-slider-demo-4 .slide2-content .content-area .text1 {
+          font-size: 33px;
+          margin-bottom: 10px;
+        }
+        #banner-slider-demo-4 .slide2-content .content-area .text2 {
+          font-size: 30px;
+          margin: 0 0 7px;
+          text-shadow: 3px 2px #92a9b3;
+        }
+        #banner-slider-demo-4 .slide2-content .content-area .btn-default {
+          padding: 7px 9px;
+          font-size: 10px;
+        }
+      }
+
+
+    .footer-top {
+        background-color: #1d1d1b;
+        color: white;
+    }
+    .footer-top a {
+      color: white;
+    }
+    .footer-top a :hover {
+      color: white;
+    }
+    .footer-top .block .block-title strong {
+      color: white;
+  }
+
+    .footer-middle {
+      background-color: #1d1d1b;
+      color: white;
+  }
+  .footer-middle a {
+    color: white;
+}
+  .footer-middle a :hover{
+    color: white;
+}
+
+  .footer-middle .block .block-title strong{
+    color: white;
+  }
+    </style>
+
+
+    <script>
+      // Create a media condition that targets viewports at least 768px wide
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+// Check if the media query is true
+if (mediaQuery.matches) {
+  // Then trigger an alert
+var image = document.getElementsByClassName("logo");
+image.src = "https://www.liola.cl/pub/media/wysiwyg/LOGO%20LIOLA%20FINAL-02.png";
+}
+    </script>
+
+
+    <a href="">      <h3  class="carruselTitulo" style="text-align:center;margin-bottom:4px;color: #c8b5a5;"><b>SPRING SUMMER '23. LINOS</b></h3>
+    </a>
+
+
+
+    homepage-bar .col-lg-4 {
+      background-color: #1d1d1b;
+  }
+
+
+  .col-lg-12 {
+    background-color: #1d1d1b;
+    color: white;
+}
+.footer-top .homepage-bar {
+  background-color: #1d1d1b;
+}
